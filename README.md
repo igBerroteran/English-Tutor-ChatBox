@@ -45,7 +45,7 @@ Open your browser and visit http://localhost:5000 to access the chatbox.
 Contribution
 Contributions are welcome. If you would like to contribute to this project, follow these steps:
 
-Fork the repository.
+Fork the repository.<br>
 2. Create a branch for your new feature: git checkout -b feature/new-feature
 
 3. Make the necessary changes and commit your modifications: git commit -m "Add new feature"
