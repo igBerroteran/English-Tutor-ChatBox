@@ -46,13 +46,13 @@ Contribution
 Contributions are welcome. If you would like to contribute to this project, follow these steps:
 
 Fork the repository.<br>
-2. Create a branch for your new feature: git checkout -b feature/new-feature
+2. Create a branch for your new feature: git checkout -b feature/new-feature<br>
 
-3. Make the necessary changes and commit your modifications: git commit -m "Add new feature"
+3. Make the necessary changes and commit your modifications: git commit -m "Add new feature"<br>
 
-4. Push your changes to your repository: git push origin feature/new-feature
+4. Push your changes to your repository: git push origin feature/new-feature<br>
 
-5. Open a Pull Request in this repository.
+5. Open a Pull Request in this repository.<br>
 
 License
 This project is licensed under the MIT License. Make sure to customize the information accordingly, such as the application name, description, technologies used, and installation and usage steps. You can also add additional sections as needed.
