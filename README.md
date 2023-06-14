@@ -13,7 +13,8 @@ Technologies Used
 Flask
 Python
 Langchain
-LLM Falcon
+LLM Falcon<br>
+
 1. Installation Requirements
 Ensure that you have Python 3 and pip installed on your system.
 
@@ -46,6 +47,7 @@ Contribution
 Contributions are welcome. If you would like to contribute to this project, follow these steps:
 
 Fork the repository.<br>
+
 2. Create a branch for your new feature: git checkout -b feature/new-feature<br>
 
 3. Make the necessary changes and commit your modifications: git commit -m "Add new feature"<br>
