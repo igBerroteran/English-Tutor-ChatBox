@@ -2,8 +2,9 @@ English-Tutor-ChatBox
 Falcon LLM Model 
 
 
-Description
-The Custom Chatbox Application is a Flask and Python-based application that utilizes Langchain and the LLM Falcon to provide an interactive chat experience. It allows users to interact with a text processing language model to obtain personalized responses.
+Description:<br>
+
+A Custom Chatbox Application is a Flask and Python-based application that utilizes Langchain and the LLM Falcon to provide an interactive chat experience. It allows users to interact with a text processing language model to obtain personalized responses.
 
 Features
 Intuitive and user-friendly chat interface.
