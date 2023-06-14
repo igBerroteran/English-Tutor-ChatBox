@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Tutor</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #1f1f1f;
+        color: #ffffff;
+        font-family: "Arial", sans-serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #26a69a;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #response_message {
+        text-align: center;
+        font-size: 18px;
+        width: 80%;
+        margin-top: 20px;
+        overflow-y: auto;
+        max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="/send_message">
+      <input
+        type="text"
+        name="human_input"
+        placeholder="Introduce tu pregunta"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="response_message"></div>
+    <script>
+      const form = document.querySelector("form");
+      const responseMessage = document.getElementById("response_message");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch("/send_message", {
+          method: "POST",
+          body: formData,
+        }).then((response) =>
+          response.text().then((data) => {
+            responseMessage.innerHTML = data;
+          })
+        );
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
